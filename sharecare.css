@@ -204,3 +204,28 @@ span.LabelWrapper label > span:hover {
 .Skin label.MultipleAnswer.q-checked {
   background-color: transparent;
 }
+.Skin .QuestionBody table.ChoiceStructure {
+  width: 150px;
+}
+.Skin .MC .MAHR .QuestionBody td,
+.Skin .MC .MAHR .QuestionBody li,
+.Skin .MC .SAHR .QuestionBody td,
+.Skin .MC .SAHR .QuestionBody li {
+  display: inline-block;
+  width: 38px;
+}
+
+.Skin .MC .MAHR .QuestionBody li,
+.Skin .MC .MAHR .QuestionBody td,
+.Skin .MC .SAHR .QuestionBody li,
+.Skin .MC .SAHR .QuestionBody td {
+  display: inline-block;
+  width: 38px;
+}
+
+.Skin .MC .MAHR .QuestionBody li,
+.Skin .MC .MAHR .QuestionBody td,
+.Skin .MC .SAHR .QuestionBody li,
+.Skin .MC .SAHR .QuestionBody td {
+  display: table-cell;
+}
