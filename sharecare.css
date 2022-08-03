@@ -1,205 +1,206 @@
-
 /* Custom style */
 .Skin #SkinConten {
-    width: 311px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .Inner .BorderColor .NPS {
-    width: 311px;
-  }
-  .Skin .QuestionBody {
-    color: #000;
-    font-size: 14px;
-    overflow-y: hidden;
-    position: relative;
-    z-index: 1;
-    width: 300px;
-    padding: 0;
-  }
-  
-  span.LabelWrapper label > span {
-    display: inline-block;
-  }
-  
-  span.LabelWrapper label > span:hover {
-    display: inline-block;
-    background-color: #009af3;
-  }
-  
-  .Skin .NPS table td {
-    text-align: center;
-  }
-  .Skin .NPS label.SingleAnswer {
-    padding: 10px 4%;
-    background-color: transparent;
-  }
-  
-  
-  .Skin .NPS table .ColumnLabels {
-    display: flex;
-    position: absolute;
-    top: 50px;
-    justify-content: space-between;
-    text-align: left;
-  }
-  .Skin .NPS table .ColumnLabels .First {
-    text-align: left;
-  }
-  .Skin .NPS table .ColumnLabels .Center {
-    text-align: center;
-  }
-  .Skin .NPS table .ColumnLabels .Last {
-    text-align: right;
-  }
-  
-  .Skin .MC .TextEntryBox,
-  .Skin .TE .ESTB .InputText,
-  .Skin .TE .FORM .InputText,
-  .Skin .TE .ML .InputText,
-  .Skin .TE .PW .InputText,
-  .Skin .TE .SL .InputText,
-  .Skin .TE textarea,
-  .Skin input.TextEntryBox,
-  .Skin input[type='password'],
-  .Skin input[type='search'],
-  .Skin input[type='text'],
-  .Skin textarea {
-    background-color: #f4f6f8;
-    border-radius: 4px;
-    border: 1px solid #dfe1e5;
-  }
-  
-  .Skin #Buttons {
-    display: flex;
-    width: 263px;
-    justify-content: center;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-right: 25px;
-  }
-  
-  .Skin #Buttons #NextButton {
-    background-color: #37ac94;
-    width: 263px;
-    height: 56px;
-  }
-  .Skin .QuestionText {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-  }
-  
-  .Skin .LabelWrapper span{
-    border:#5d6a74 2px solid;
-    border-radius:50%;
-    width:34px;
-    height:34px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
-    }
-    
-    .Skin .LabelContatiner {
-     width:300px;
-     background: transparent;
-     margin:8px;
-      overflow:hidden;
-    
-    }
-    
-    .Skin label.SingleAnswer.q-checked span{
-    background:#00bfa5;
-    width:34px;
-    height:34px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .Skin label.SingleAnswer span:hover{
-    background:#eee;
-    width:34px;
-    height:34px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    }
-    
-    .Skin SingleAnswer, .Skin MultipleAnswer{
-    background: rgba(0, 0, 0, 0.0);
-    }
-    
-    
-    .Skin .QuestionOuter .Inner{
-      width: 300px;
-      display: flex;
-      justify-content: center;
-      overflow:hidden;
-    }
-    
-    
-  
-    .Skin #Buttons #NextButton {
-      width:263px;
-      height:56px;
-      background:#00bfa5;
-    }
-    
-    .Skin #Buttons{
-    display:flex;
-    justify-content:center; 
-    margin:10px;
-    }
-    
-    .Skin .QuestionOuter{
-      padding-bottom:0;
-      overflow:hidden;
-    }
-    
-    .Skin .MC .ChoiceStructure{
-      border-spacing:0
-    }
-    
-    .Skin label.SingleAnswer{
-    background: rgba(0, 0, 0, 0.0);
-    
-    }
-    
-    .Skin .MC .TextEntryBox, .Skin .TE .ESTB .InputText, .Skin .TE .FORM .InputText,
-    .Skin .TE .ML .InputText, .Skin .TE .PW .InputText, .Skin .TE .SL .InputText,
-    .Skin .TE textarea, .Skin input.TextEntryBox, .Skin input[type=password],
-    .Skin input[type=search], .Skin input[type=text], .Skin textarea{
-    background:#ccd6dd;
-    width:263px;
-    }
-    
-    .Skin .MC .SAHR .QuestionBody table td label, .Skin .MC .MAHR .QuestionBody table td labe{
-    background: transparent;	
-    }
-  
-   
-  .Skin label.SingleAnswer.q-checked span{
-      border-color: transparent
-  }
-  
-  .Skin #Buttons{
-          padding-left: 25px;
-      margin-right: 0px;
-  
-  }
-  .Skin .LabelContatiner{
-  
-      padding:0px
-  }
-  
-  .Skin label.MultipleAnswer.LabelPositionBELOW, .Skin label.SingleAnswer.LabelPositionBELOW{
-      padding-left:0px;
-      padding-top:10px;
-      padding-right:0px;
-      padding-bottom:10px;
-  }
-  .Skin label.SingleAnswer.q-checked, .Skin label.MultipleAnswer.q-checked {
-      background-color: transparent;
-  }
+  width: 311px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Inner .BorderColor .NPS {
+  width: 311px;
+}
+.Skin .QuestionBody {
+  color: #000;
+  font-size: 14px;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  padding: 0;
+}
+
+span.LabelWrapper label > span {
+  display: inline-block;
+}
+
+span.LabelWrapper label > span:hover {
+  display: inline-block;
+  background-color: #009af3;
+}
+
+.Skin .NPS table td {
+  text-align: center;
+}
+.Skin .NPS label.SingleAnswer {
+  padding: 10px 4%;
+  background-color: transparent;
+}
+
+.Skin .NPS table .ColumnLabels {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  justify-content: space-between;
+  text-align: left;
+}
+.Skin .NPS table .ColumnLabels .First {
+  text-align: left;
+}
+.Skin .NPS table .ColumnLabels .Center {
+  text-align: center;
+}
+.Skin .NPS table .ColumnLabels .Last {
+  text-align: right;
+}
+
+.Skin .MC .TextEntryBox,
+.Skin .TE .ESTB .InputText,
+.Skin .TE .FORM .InputText,
+.Skin .TE .ML .InputText,
+.Skin .TE .PW .InputText,
+.Skin .TE .SL .InputText,
+.Skin .TE textarea,
+.Skin input.TextEntryBox,
+.Skin input[type="password"],
+.Skin input[type="search"],
+.Skin input[type="text"],
+.Skin textarea {
+  background-color: #f4f6f8;
+  border-radius: 4px;
+  border: 1px solid #dfe1e5;
+}
+
+.Skin #Buttons {
+  display: flex;
+  width: 263px;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-right: 25px;
+}
+
+.Skin #Buttons #NextButton {
+  background-color: #37ac94;
+  width: 263px;
+  height: 56px;
+}
+.Skin .QuestionText {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.Skin .LabelWrapper span {
+  border: #5d6a74 2px solid;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skin .LabelContatiner {
+  width: 300px;
+  background: transparent;
+  margin: 8px;
+  overflow: hidden;
+}
+
+.Skin label.SingleAnswer.q-checked span {
+  background: #00bfa5;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skin label.SingleAnswer span:hover {
+  background: #eee;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skin SingleAnswer,
+.Skin MultipleAnswer {
+  background: rgba(0, 0, 0, 0);
+}
+
+.Skin .QuestionOuter .Inner {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Skin #Buttons #NextButton {
+  width: 263px;
+  height: 56px;
+  background: #00bfa5;
+}
+
+.Skin #Buttons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Skin .QuestionOuter {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.Skin .MC .ChoiceStructure {
+  border-spacing: 0;
+}
+
+.Skin label.SingleAnswer {
+  background: rgba(0, 0, 0, 0);
+}
+
+.Skin .MC .TextEntryBox,
+.Skin .TE .ESTB .InputText,
+.Skin .TE .FORM .InputText,
+.Skin .TE .ML .InputText,
+.Skin .TE .PW .InputText,
+.Skin .TE .SL .InputText,
+.Skin .TE textarea,
+.Skin input.TextEntryBox,
+.Skin input[type="password"],
+.Skin input[type="search"],
+.Skin input[type="text"],
+.Skin textarea {
+  background: #ccd6dd;
+  width: 263px;
+}
+
+.Skin .MC .SAHR .QuestionBody table td label,
+.Skin .MC .MAHR .QuestionBody table td labe {
+  background: transparent;
+}
+
+.Skin label.SingleAnswer.q-checked span {
+  border-color: transparent;
+}
+
+.Skin #Buttons {
+  padding-left: 25px;
+  margin-right: 0px;
+}
+.Skin .LabelContatiner {
+  padding: 0px;
+}
+
+.Skin label.MultipleAnswer.LabelPositionBELOW,
+.Skin label.SingleAnswer.LabelPositionBELOW {
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+}
+.Skin label.SingleAnswer.q-checked,
+.Skin label.MultipleAnswer.q-checked {
+  background-color: transparent;
+}
