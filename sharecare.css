@@ -1,57 +1,60 @@
 /* Page styles */
 
-#Wrapper {
+#app #header-container.empty {
   /* Pad top to give space for parent close button */
-  padding-top: 40px;
+  height: 40px;
+  min-height: 0;
+  padding: 0;
 }
-#Plug {
+#plug {
   /* Hide plug */
   visibility: hidden;
 }
-.Skin {
+#app {
   color: #14181a;
   /* Use same font stack */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
 }
-.Skin .SkinInner {
+#survey-canvas {
   /* Use same max width as our modals */
   width: 100%;
   max-width: 500px;
 }
-.Skin #Questions {
+#page #contents {
+  padding: 0 16px;
   /* Prevent questions scrolling under fixed buttons */
   margin-bottom: 88px;
 }
 @media (min-width: 500px) {
-  .Skin #Questions {
+  #page #contents {
     /* Revert margin when buttons no longer fixed */
     margin-bottom: 0;
   }
 }
-.Skin .QuestionText {
-  color: #14181a;
-  font-size: 18px;
+.shadowbox .shadowbox-inner {
+  /* Stop shadowbox clipping content */
+  overflow-x: visible;
+}
+.question .question-error-wrapper .shadowbox-inner {
+  /* Remove inner padding reserved for error boxes */
+  padding: 0;
+}
+.question .question-error-wrapper.error .shadowbox-inner {
+  /* Re-add inner padding when we have error */
+  padding: 0 16px;
+}
+.question .question-display {
   line-height: 24px;
-  font-weight: bold;
-  text-align: center;
-  padding: 16px;
+  margin-bottom: 16px;
 }
-.Skin .QuestionBody {
-  color: #14181a;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding: 0 16px 16px 16px;
+.question .required-marker {
+  color: #5d6a74;
 }
-.Skin .QuestionOuter {
-  padding-bottom: 32px;
+.question {
+  margin-bottom: 16px;
 }
-.Skin .QuestionOuter.Highlight .Inner {
-  /* Avoid tinted background color on validation */
-  background: none;
-}
-.Skin #Buttons {
+#navigation {
   display: flex;
   flex-wrap: nowrap;
   padding: 16px;
@@ -62,12 +65,12 @@
   margin-top: 0;
 }
 @media (min-width: 500px) {
-  .Skin #Buttons {
+  #navigation {
     position: static;
   }
 }
-.Skin #Buttons #NextButton,
-.Skin #Buttons #PreviousButton {
+#navigation #next-button,
+#navigation #previous-button {
   color: #14181a;
   font-size: 18px;
   line-height: 24px;
@@ -79,204 +82,52 @@
   padding: 0 16px 0 16px;
   border-radius: 8px;
 }
-.Skin #Buttons #NextButton:focus,
-.Skin #Buttons #PreviousButton:focus {
+#navigation svg {
+  display: none;
+}
+#navigation #next-button:focus,
+#navigation #previous-button:focus {
   background-color: #00bfa5;
   box-shadow: none;
   outline: none;
 }
-.Skin #Buttons #NextButton:focus-visible,
-.Skin #Buttons #PreviousButton:focus-visible {
+#navigation #next-button:focus-visible,
+#navigation #previous-button:focus-visible {
   box-shadow: inset 0px 0px 0px 2px #14181a;
 }
-.Skin #Buttons #NextButton:active,
-.Skin #Buttons #PreviousButton:active {
+#navigation #next-button:active,
+#navigation #previous-button:active {
   background-color: #00a690;
 }
-.Skin #Buttons #NextButton:disabled,
-.Skin #Buttons #PreviousButton:disabled {
+#navigation #next-button:disabled,
+#navigation #previous-button:disabled {
   opacity: 1;
   color: #5d6a74;
   background-color: #ccd6dd;
 }
-.Skin #Buttons .Button + #NextButton {
+#navigation #previous-button + #next-button {
   margin-left: 16px;
 }
-.Skin #EndOfSurvey {
+#end-of-survey {
   color: #14181a;
   text-align: center;
   background: url(https://res.cloudinary.com/sharecare/image/upload/v1659617900/sharecare-images/qualtrics/heart-on-stars.png)
     center top no-repeat;
   padding: 156px 16px 16px 16px;
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
-/* Question specific styles */
-/*
-span.LabelWrapper label > span {
-  display: inline-block;
-}
+/* Question specific */
 
-span.LabelWrapper label > span:hover {
-  display: inline-block;
-  background-color: #009af3;
+/* Fit NPS into 500px width */
+@media (min-width: 42.5rem) {
+  .nps .choices {
+    grid-gap: 4px;
+  }
+  .nps .choices .choice {
+    min-width: auto;
+  }
 }
-
-.Skin .NPS table td {
-  text-align: center;
-}
-.Skin .NPS label.SingleAnswer {
-  padding: 10px 4%;
-  background-color: transparent;
-}
-
-.Skin .NPS table .ColumnLabels {
-  display: flex;
-  position: absolute;
-  top: 50px;
-  justify-content: space-between;
-  text-align: left;
-}
-.Skin .NPS table .ColumnLabels .First {
-  text-align: left;
-}
-.Skin .NPS table .ColumnLabels .Center {
-  text-align: center;
-}
-.Skin .NPS table .ColumnLabels .Last {
-  text-align: right;
-}
-
-.Skin .MC .TextEntryBox,
-.Skin .TE .ESTB .InputText,
-.Skin .TE .FORM .InputText,
-.Skin .TE .ML .InputText,
-.Skin .TE .PW .InputText,
-.Skin .TE .SL .InputText,
-.Skin .TE textarea,
-.Skin input.TextEntryBox,
-.Skin input[type="password"],
-.Skin input[type="search"],
-.Skin input[type="text"],
-.Skin textarea {
-  background-color: #f4f6f8;
-  border-radius: 4px;
-  border: 1px solid #dfe1e5;
-}
-
-.Skin .LabelWrapper span {
-  border: #5d6a74 2px solid;
-  border-radius: 50%;
-  width: 34px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Skin .LabelContatiner {
-  width: 300px;
-  background: transparent;
-  margin: 8px;
-  overflow: hidden;
-}
-
-.Skin label.SingleAnswer.q-checked span {
-  background: #00bfa5;
-  width: 34px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Skin label.SingleAnswer span:hover {
-  background: #eee;
-  width: 34px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Skin SingleAnswer,
-.Skin MultipleAnswer {
-  background: rgba(0, 0, 0, 0);
-}
-
-.Skin .MC .ChoiceStructure {
-  border-spacing: 0;
-}
-
-.Skin label.SingleAnswer {
-  background: rgba(0, 0, 0, 0);
-}
-
-.Skin .MC .TextEntryBox,
-.Skin .TE .ESTB .InputText,
-.Skin .TE .FORM .InputText,
-.Skin .TE .ML .InputText,
-.Skin .TE .PW .InputText,
-.Skin .TE .SL .InputText,
-.Skin .TE textarea,
-.Skin input.TextEntryBox,
-.Skin input[type="password"],
-.Skin input[type="search"],
-.Skin input[type="text"],
-.Skin textarea {
-  background: #ccd6dd;
-  width: 263px;
-}
-
-.Skin .MC .SAHR .QuestionBody table td label,
-.Skin .MC .MAHR .QuestionBody table td labe {
-  background: transparent;
-}
-
-.Skin label.SingleAnswer.q-checked span {
-  border-color: transparent;
-}
-
-.Skin .LabelContatiner {
-  padding: 0px;
-}
-
-.Skin label.MultipleAnswer.LabelPositionBELOW,
-.Skin label.SingleAnswer.LabelPositionBELOW {
-  padding-left: 0px;
-  padding-top: 10px;
-  padding-right: 0px;
-  padding-bottom: 10px;
-}
-.Skin label.SingleAnswer.q-checked,
-.Skin label.MultipleAnswer.q-checked {
-  background-color: transparent;
-}
-.Skin .QuestionBody table.ChoiceStructure {
-  width: 150px;
-}
-.Skin .MC .MAHR .QuestionBody td,
-.Skin .MC .MAHR .QuestionBody li,
-.Skin .MC .SAHR .QuestionBody td,
-.Skin .MC .SAHR .QuestionBody li {
-  display: inline-block;
-  width: 38px;
-}
-
-.Skin .MC .MAHR .QuestionBody li,
-.Skin .MC .MAHR .QuestionBody td,
-.Skin .MC .SAHR .QuestionBody li,
-.Skin .MC .SAHR .QuestionBody td {
-  display: inline-block;
-  width: 38px;
-}
-
-.Skin .MC .MAHR .QuestionBody li,
-.Skin .MC .MAHR .QuestionBody td,
-.Skin .MC .SAHR .QuestionBody li,
-.Skin .MC .SAHR .QuestionBody td {
-  display: table-cell;
-}
-*/
