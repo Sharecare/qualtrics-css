@@ -57,6 +57,7 @@
 #navigation {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: flex-start;
   padding: 16px;
   background-color: #fff;
   position: fixed;
