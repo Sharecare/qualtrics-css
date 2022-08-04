@@ -23,7 +23,7 @@
   /* Prevent questions scrolling under fixed buttons */
   margin-bottom: 88px;
 }
-@media (min-width: 640px) {
+@media (min-width: 500px) {
   .Skin #Questions {
     /* Revert margin when buttons no longer fixed */
     margin-bottom: 0;
@@ -61,7 +61,7 @@
   width: 100%;
   margin-top: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 500px) {
   .Skin #Buttons {
     position: static;
   }
@@ -101,6 +101,16 @@
 }
 .Skin #Buttons .Button + #NextButton {
   margin-left: 16px;
+}
+.Skin #EndOfSurvey {
+  color: #14181a;
+  text-align: center;
+  background: url(https://res.cloudinary.com/sharecare/image/upload/v1659617900/sharecare-images/qualtrics/heart-on-stars.png)
+    center top no-repeat;
+  padding: 156px 16px 16px 16px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 /* Question specific styles */
