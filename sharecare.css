@@ -1,22 +1,110 @@
-/* Custom style */
-.Skin #SkinConten {
-  width: 311px;
-  display: flex;
-  flex-wrap: wrap;
+/* Page styles */
+
+#Wrapper {
+  /* Pad top to give space for parent close button */
+  padding-top: 40px;
 }
-.Inner .BorderColor .NPS {
-  width: 311px;
+#Plug {
+  /* Hide plug */
+  visibility: hidden;
+}
+.Skin {
+  color: #14181a;
+  /* Use same font stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+.Skin .SkinInner {
+  /* Use same max width as our modals */
+  width: 100%;
+  max-width: 500px;
+}
+.Skin #Questions {
+  /* Prevent questions scrolling under fixed buttons */
+  margin-bottom: 88px;
+}
+@media (min-width: 640px) {
+  .Skin #Questions {
+    /* Revert margin when buttons no longer fixed */
+    margin-bottom: 0;
+  }
+}
+.Skin .QuestionText {
+  color: #14181a;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
 }
 .Skin .QuestionBody {
-  color: #000;
-  font-size: 14px;
-  overflow-y: hidden;
-  position: relative;
-  z-index: 1;
-  width: 300px;
-  padding: 0;
+  color: #14181a;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 16px 16px 16px;
+}
+.Skin .QuestionOuter {
+  padding-bottom: 32px;
+}
+.Skin .QuestionOuter.Highlight .Inner {
+  /* Avoid tinted background color on validation */
+  background: none;
+}
+.Skin #Buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 16px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0;
+}
+@media (min-width: 640px) {
+  .Skin #Buttons {
+    position: static;
+  }
+}
+.Skin #Buttons #NextButton,
+.Skin #Buttons #PreviousButton {
+  color: #14181a;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 343px;
+  background-color: #00bfa5;
+  height: 56px;
+  padding: 0 16px 0 16px;
+  border-radius: 8px;
+}
+.Skin #Buttons #NextButton:focus,
+.Skin #Buttons #PreviousButton:focus {
+  background-color: #00bfa5;
+  box-shadow: none;
+  outline: none;
+}
+.Skin #Buttons #NextButton:focus-visible,
+.Skin #Buttons #PreviousButton:focus-visible {
+  box-shadow: inset 0px 0px 0px 2px #14181a;
+}
+.Skin #Buttons #NextButton:active,
+.Skin #Buttons #PreviousButton:active {
+  background-color: #00a690;
+}
+.Skin #Buttons #NextButton:disabled,
+.Skin #Buttons #PreviousButton:disabled {
+  opacity: 1;
+  color: #5d6a74;
+  background-color: #ccd6dd;
+}
+.Skin #Buttons .Button + #NextButton {
+  margin-left: 16px;
 }
 
+/* Question specific styles */
+/*
 span.LabelWrapper label > span {
   display: inline-block;
 }
@@ -68,26 +156,6 @@ span.LabelWrapper label > span:hover {
   border: 1px solid #dfe1e5;
 }
 
-.Skin #Buttons {
-  display: flex;
-  width: 263px;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  padding-right: 25px;
-}
-
-.Skin #Buttons #NextButton {
-  background-color: #37ac94;
-  width: 263px;
-  height: 56px;
-}
-.Skin .QuestionText {
-  display: flex;
-  flex-wrap: wrap;
-  width: 300px;
-}
-
 .Skin .LabelWrapper span {
   border: #5d6a74 2px solid;
   border-radius: 50%;
@@ -128,30 +196,6 @@ span.LabelWrapper label > span:hover {
   background: rgba(0, 0, 0, 0);
 }
 
-.Skin .QuestionOuter .Inner {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.Skin #Buttons #NextButton {
-  width: 263px;
-  height: 56px;
-  background: #00bfa5;
-}
-
-.Skin #Buttons {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-
-.Skin .QuestionOuter {
-  padding-bottom: 0;
-  overflow: hidden;
-}
-
 .Skin .MC .ChoiceStructure {
   border-spacing: 0;
 }
@@ -185,10 +229,6 @@ span.LabelWrapper label > span:hover {
   border-color: transparent;
 }
 
-.Skin #Buttons {
-  padding-left: 25px;
-  margin-right: 0px;
-}
 .Skin .LabelContatiner {
   padding: 0px;
 }
@@ -229,3 +269,4 @@ span.LabelWrapper label > span:hover {
 .Skin .MC .SAHR .QuestionBody td {
   display: table-cell;
 }
+*/
