@@ -2,7 +2,7 @@
 
 Sharecare styling for [Qualtrics](https://www.qualtrics.com/) surveys.
 
-Deployed and served using GH pages at https://sharecare.github.io/qualtrics-css/sharecare.css.
+Deployed and served using GH pages at https://sharecare.github.io/qualtrics-css/classic-sharecare.css.
 
 ## Usage
 
