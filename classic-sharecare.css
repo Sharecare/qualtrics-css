@@ -5,6 +5,7 @@
 #Wrapper {
   /* Pad top to give space for parent close button */
   padding-top: 40px;
+
 }
 #Plug {
   /* Hide plug */
@@ -47,7 +48,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  padding: 0 16px 16px 16px;
+  padding: 0 16px 36px 16px;
 }
 .Skin .QuestionOuter {
   padding-bottom: 32px;
@@ -157,6 +158,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.Skin .NPS table tr .ColumnLabel{
+  position: absolute;
+    top: 107px;
+    left: 75px;
+    color:#5d6a74;
 }
 .Skin .NPS table tr td {
     display: block;
