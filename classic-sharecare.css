@@ -34,7 +34,7 @@
 }
 .Skin .ValidationError {
   text-align: left;
-  padding: 0 16px;
+  padding: 16px 16px 0 16px;
 }
 .Skin .QuestionText {
   color: #14181a;
