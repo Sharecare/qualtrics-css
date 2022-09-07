@@ -12,7 +12,7 @@
   visibility: hidden;
 }
 .Skin {
-  color: #14181a;
+  color: 14181a;
   /* Use same font stack */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
@@ -33,26 +33,25 @@
   }
 }
 .Skin .ValidationError {
-  text-align: left;
-  padding: 16px 16px 0 16px;
+  text-align: center;
+  padding: 0 16px 16px 16px;
 }
 .Skin .QuestionText {
   color: #14181a;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 16px;
+  padding: 0 24px 25px 24px;
+  text-align: center;
 }
 .Skin .QuestionBody {
   color: #14181a;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  padding: 0 16px 36px 16px;
+  padding: 0 16px 32px 16px;
 }
-.Skin .QuestionOuter {
-  padding-bottom: 32px;
-}
+
 .Skin .QuestionOuter.Highlight .Inner {
   /* Avoid tinted background color on validation */
   background: none;
@@ -119,20 +118,19 @@
   font-weight: 500;
 }
 
-/* Question specific styles */
-
 /* Single/multi select focus outlines */
 .Skin label.MultipleAnswer.q-focused.q-checked,
 .Skin label.SingleAnswer.q-focused.q-checked {
   outline: none;
   background: #00bfa5;
-  box-shadow: inset 0px 0px 0px 2px #14181a;
+  box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,.54);
 }
 /* NPS  */
 .Skin .NPS table label.SingleAnswer{
     border: 2px solid #5d6a74;
     color:#5d6a74;
-    background:transparent;
+    background:
+    transparent;
     width: 38px;
     display: flex;
     height: 38px;
@@ -140,7 +138,6 @@
     justify-content: center;
     align-items: center;
     margin: 4px;
-  
 }
 .Skin .NPS table label.SingleAnswer.q-checked{
     background:#00bfa6;
@@ -152,12 +149,13 @@
     justify-content: center;
     align-items: center;
     margin: 4px;
-  
 }
 .Skin .NPS table tr:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 .Skin .NPS table tr .ColumnLabel{
   position: absolute;
