@@ -5,7 +5,10 @@
 #Wrapper {
   /* Pad top to give space for parent close button */
   padding-top: 40px;
-
+}
+.Skin #HeaderContainer {
+  /* This plus wrapper padding gives 56px, distance from top to text in designs */
+  padding: 8px;
 }
 #Plug {
   /* Hide plug */
@@ -20,11 +23,16 @@
 .Skin .SkinInner {
   /* Use same max width as our modals */
   width: 100%;
+  min-width: auto;
   max-width: 500px;
 }
 .Skin #Questions {
   /* Prevent questions scrolling under fixed buttons */
   margin-bottom: 88px;
+}
+.Skin #PushStickyFooter {
+  /* Unecessary element at bottom of page, adding extra scroll height */
+  display: none;
 }
 @media (min-width: 500px) {
   .Skin #Questions {
@@ -41,7 +49,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 0 24px 25px 24px;
+  padding: 0 24px 24px 24px;
   text-align: center;
 }
 .Skin .QuestionBody {
@@ -51,7 +59,6 @@
   font-weight: 400;
   padding: 0 16px 32px 16px;
 }
-
 .Skin .QuestionOuter.Highlight .Inner {
   /* Avoid tinted background color on validation */
   background: none;
@@ -107,51 +114,66 @@
 .Skin #Buttons .Button + #NextButton {
   margin-left: 16px;
 }
+
+/* End of survey */
+
 .Skin #EndOfSurvey {
   color: #14181a;
   text-align: center;
-  background: url(https://res.cloudinary.com/sharecare/image/upload/v1659617900/sharecare-images/qualtrics/heart-on-stars.png)
-  center top no-repeat;
+  background: url(https://res.cloudinary.com/sharecare/image/upload/v1662554731/sharecare-images/qualtrics/heart-on-stars.png)
+    center top/269px 144px no-repeat;
   padding: 156px 16px 16px 16px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
-/* Single/multi select focus outlines */
+/* Question specific styles */
+
+/* Single/multi select */
 .Skin label.MultipleAnswer.q-focused.q-checked,
 .Skin label.SingleAnswer.q-focused.q-checked {
   outline: none;
   background: #00bfa5;
-  box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,.54);
+  box-shadow: none;
 }
-/* NPS  */
-.Skin .NPS table label.SingleAnswer{
-    border: 2px solid #5d6a74;
-    color:#5d6a74;
-    background:
-    transparent;
-    width: 38px;
-    display: flex;
-    height: 38px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: 4px;
+.Skin
+  input[type="radio"]:focus-visible
+  ~ .LabelWrapper
+  > label.MultipleAnswer.q-focused.q-checked,
+.Skin
+  input[type="radio"]:focus-visible
+  ~ .LabelWrapper
+  > label.SingleAnswer.q-focused.q-checked {
+  box-shadow: inset 0px 0px 0px 2px #14181a;
 }
-.Skin .NPS table label.SingleAnswer.q-checked{
-    background:#00bfa6;
-    border-color:transparent;
-  color:#14181A;
-    width: 38px;
-    display: flex;
-    height: 38px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: 4px;
-  
+/* NPS */
+.Skin .NPS table label.SingleAnswer {
+  border: 2px solid #5d6a74;
+  color: #5d6a74;
+  background: transparent;
+  width: 38px;
+  display: flex;
+  height: 38px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
 }
+.Skin .NPS table label.SingleAnswer.q-checked {
+  background: #00bfa6;
+  border-color: transparent;
+  color: #14181a;
+}
+/* To add keyboard focus (with focus-visible) we need crazy selector because input isn't close to label */
+/* Support is new, not tested */
+.Skin
+  .NPS
+  table:has(input:focus-visible)
+  label.SingleAnswer.q-checked.q-focused {
+  border-color: #14181a;
+}
+/* Row containing NPS options  */
 .Skin .NPS table tr:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
@@ -159,16 +181,8 @@
   margin-right: -10px;
   margin-left: -10px;
 }
-.Skin .NPS table tr .ColumnLabel{
-  position: absolute;
-    top: 107px;
-    left: 75px;
-    color:#5d6a74;
-}
+/* Option cells */
 .Skin .NPS table tr td {
-    display: block;
-    width: auto;
-}
-.Skin .LabelWrapper{
-  width:100%
+  display: block;
+  width: auto;
 }
