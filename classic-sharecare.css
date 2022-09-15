@@ -58,10 +58,10 @@
 .Skin #Buttons {
   display: flex;
   flex-wrap: nowrap;
-  padding: 16px;
+  padding: 16px 16px 64px 16px;
   background-color: #fff;
   position: fixed;
-  bottom: 46px;
+  bottom: 0;
   width: 100%;
   margin-top: 0;
 }
