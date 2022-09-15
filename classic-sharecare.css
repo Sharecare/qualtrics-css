@@ -2,14 +2,6 @@
 
 /* Page styles */
 
-#Wrapper {
-  /* Pad top to give space for parent close button */
-  padding-top: 40px;
-}
-.Skin #HeaderContainer {
-  /* This plus wrapper padding gives 56px, distance from top to text in designs */
-  padding: 8px;
-}
 #Plug {
   /* Hide plug */
   visibility: hidden;
@@ -49,7 +41,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 0 24px 24px 24px;
+  padding: 0 24px 16px 24px;
   text-align: center;
 }
 .Skin .QuestionBody {
@@ -57,7 +49,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  padding: 0 16px 32px 16px;
+  padding: 0 16px 40px 16px;
 }
 .Skin .QuestionOuter.Highlight .Inner {
   /* Avoid tinted background color on validation */
@@ -69,7 +61,7 @@
   padding: 16px;
   background-color: #fff;
   position: fixed;
-  bottom: 0;
+  bottom: 46px;
   width: 100%;
   margin-top: 0;
 }
