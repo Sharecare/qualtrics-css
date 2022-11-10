@@ -1,41 +1,41 @@
 # Qualtrics CSS
 
-Sharecare styling for [Qualtrics](https://www.qualtrics.com/) surveys.
-
-Deployed and served using GH pages at https://sharecare.github.io/qualtrics-css/classic-sharecare.css.
+ Styling for [Qualtrics](https://www.qualtrics.com/) surveys.
 
 ## Usage
 
-Go to Survey > Look and feel and set the following:
 
-- Theme: Blank
-- Layout: Classic
-- General
-  - Next Button Text: Next
-  - Previous Button Text: Previous
-  - Progress Bar: None
-  - Progress Bar Position: Top
-  - Questions Per Page: (empty)
-  - Header: (empty)
-  - Footer: (empty)
-- Style
-  - Primary Color: #00bfa5
-  - Secondary Color: #00bfa5
-  - Font: Default
-  - Foreground Contrast: Medium
-  - Question Spacing: Compact
-  - Question Text: 18 Bold
-  - Answer Text: 18
-  - Custom CSS: (empty)
-  - External CSS: `https://sharecare.github.io/qualtrics-css/classic-sharecare.css`
-- Motion
-  - Page Transition: None
-- Logo: None
-- Background
-  - Background Type: Color
-  - Background Color: #FFFFFF
-  - Foreground Contrast: Medium
-  - Questions Container: Off
+Go to Survey > Look and feel and set the following:
+| App                   | Sharecare                                                           | Carefirst                                                           |
+| --------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Theme:                | Blank                                                               | Blank                                                               |
+| Layout                | Classic                                                             | Classic                                                             |
+| General               |                                                                     |                                                                     |
+| Next Button Text      | Next                                                                | Next                                                                |
+| Previous Button Text  | Previous                                                            | Previous                                                            |
+| Progress Bar          | None                                                                | None                                                                |
+| Progress Bar Position | Top                                                                 | Top                                                                 |
+| Questions Per Page    | (empty)                                                             | (empty)                                                             |
+| Header                | (empty)                                                             | (empty)                                                             |
+| Footer                | (empty)                                                             | (empty)                                                             |
+| Style                 |                                                                     |                                                                     |
+| Primary Color         | #00bfa5                                                             | #2779a9                                                             |
+| Secondary Color       | #00bfa6                                                             | #2779a9                                                             |
+| Font                  | Default                                                             | Default                                                             |
+| Foreground Contrast   | Medium                                                              | Medium                                                              |
+| Question Spacing      | Compact                                                             | Compact                                                             |
+| Question Text         | 18 Bold                                                             | 18 Bold                                                             |
+| Answer Text           | 18                                                                  | 18                                                                  |
+| Custom CSS            | (empty)                                                             | (empty)                                                             |
+| External CSS          | \`https://sharecare.github.io/qualtrics-css/classic-sharecare.css\` | \`https://sharecare.github.io/qualtrics-css/classic-carefirst.css\` |
+| Motion                |                                                                     |                                                                     |
+| - Page Transition       | None                                                                | None                                                                |
+| Logo                  | None                                                                | None                                                                |
+| Background            |                                                                     |                                                                     |
+| - Background Type       | Color                                                               | Color                                                               |
+| - Background Color      | #FFFFFF                                                             | #FFFFFF                                                             |
+| - Foreground Contrast   | Medium                                                              | Medium                                                              |
+| - Question Container    | Off                                                                 | Off                                                                 
 
 ## Development
 
