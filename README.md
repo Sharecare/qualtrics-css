@@ -5,7 +5,8 @@
 ## Usage
 
 
-Go to Survey > Look and feel and set the following:
+Go to Survey > Look and feel and set the following according to the application:
+
 | App                   | Sharecare                                                           | Carefirst                                                           |
 | --------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | Theme:                | Blank                                                               | Blank                                                               |
@@ -29,13 +30,13 @@ Go to Survey > Look and feel and set the following:
 | Custom CSS            | (empty)                                                             | (empty)                                                             |
 | External CSS          | \`https://sharecare.github.io/qualtrics-css/classic-sharecare.css\` | \`https://sharecare.github.io/qualtrics-css/classic-carefirst.css\` |
 | Motion                |                                                                     |                                                                     |
-| - Page Transition       | None                                                                | None                                                                |
+| Page Transition       | None                                                                | None                                                                |
 | Logo                  | None                                                                | None                                                                |
 | Background            |                                                                     |                                                                     |
-| - Background Type       | Color                                                               | Color                                                               |
-| - Background Color      | #FFFFFF                                                             | #FFFFFF                                                             |
-| - Foreground Contrast   | Medium                                                              | Medium                                                              |
-| - Question Container    | Off                                                                 | Off                                                                 
+| Background Type       | Color                                                               | Color                                                               |
+| Background Color      | #FFFFFF                                                             | #FFFFFF                                                             |
+| Foreground Contrast   | Medium                                                              | Medium                                                              |
+| Question Container    | Off                                                                 | Off                                                                 |
 
 ## Development
 
