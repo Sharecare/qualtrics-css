@@ -1,0 +1,168 @@
+/* For use with "Classic" layout. */
+
+/* Page styles */
+
+#Plug {
+  /* Hide plug */
+  visibility: hidden;
+}
+.Skin {
+  color: #14181a;
+  /* Use same font stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+.Skin .SkinInner {
+  /* Use same max width as our modals */
+  width: 100%;
+  min-width: auto;
+  max-width: 500px;
+}
+.Skin #Questions {
+  /* Prevent questions scrolling under fixed buttons */
+  margin-bottom: 88px;
+}
+.Skin #PushStickyFooter {
+  /* Unecessary element at bottom of page, adding extra scroll height */
+  display: none;
+}
+@media (min-width: 500px) {
+  .Skin #Questions {
+    /* Revert margin when buttons no longer fixed */
+    margin-bottom: 0;
+  }
+}
+.Skin .ValidationError {
+  text-align: center;
+  padding: 0 16px 16px 16px;
+}
+.Skin .QuestionText {
+  color: #14181a;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 0 24px 16px 24px;
+  text-align: center;
+}
+.Skin .QuestionBody {
+  color: #14181a;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 16px 40px 16px;
+}
+.Skin .QuestionOuter.Highlight .Inner {
+  /* Avoid tinted background color on validation */
+  background: none;
+}
+.Skin #Buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  padding:  16px;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0;
+}
+@media (min-width: 500px) {
+  .Skin #Buttons {
+    position: static;
+  }
+}
+.Skin #Buttons #NextButton,
+.Skin #Buttons #PreviousButton {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 343px;
+  background-color: #2779A9;
+  height: 56px;
+  padding: 0 16px 0 16px;
+  border-radius: 8px;
+}
+.Skin #Buttons #NextButton:focus,
+.Skin #Buttons #PreviousButton:focus {
+  background-color: #2779A9;
+  box-shadow: none;
+  outline: none;
+}
+.Skin #Buttons #NextButton:focus-visible,
+.Skin #Buttons #PreviousButton:focus-visible {
+  box-shadow: inset 0px 0px 0px 2px #ccd6dd;
+}
+.Skin #Buttons #NextButton:active,
+.Skin #Buttons #PreviousButton:active {
+  background-color: #2779A9;
+  color:#FFFFFF;
+}
+.Skin #Buttons #NextButton:disabled,
+.Skin #Buttons #PreviousButton:disabled {
+  opacity: 1;
+  color: #5d6a74;
+  background-color: #ccd6dd;
+}
+.Skin #Buttons .Button + #NextButton {
+  margin-left: 16px;
+}
+  
+/* Question specific styles */
+
+/* Single/multi select */
+.Skin label.MultipleAnswer.q-focused.q-checked,
+.Skin label.SingleAnswer.q-focused.q-checked {
+  outline: none;
+  background: #2779A9;
+  box-shadow: none;
+}
+.Skin
+  input[type="radio"]:focus-visible
+  ~ .LabelWrapper
+  > label.MultipleAnswer.q-focused.q-checked,
+.Skin
+  input[type="radio"]:focus-visible
+  ~ .LabelWrapper
+  > label.SingleAnswer.q-focused.q-checked {
+  box-shadow: inset 0px 0px 0px 2px #fff;
+}
+/* NPS */
+.Skin .NPS table label.SingleAnswer {
+  border: 2px solid #5d6a74;
+  color: #5d6a74;
+  background: transparent;
+  width: 38px;
+  display: flex;
+  height: 38px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+}
+.Skin .NPS table label.SingleAnswer.q-checked {
+  background: #2779A9;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+/* To add keyboard focus (with focus-visible) we need crazy selector because input isn't close to label */
+/* Support is new, not tested */
+.Skin
+  .NPS
+  table:has(input:focus-visible)
+  label.SingleAnswer.q-checked.q-focused {
+  border-color: #FFFFFF;
+}
+/* Row containing NPS options  */
+.Skin .NPS table tr:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+/* Option cells */
+.Skin .NPS table tr td {
+  display: block;
+  width: auto;
+}
