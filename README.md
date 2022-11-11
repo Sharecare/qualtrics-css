@@ -28,7 +28,7 @@ Go to Survey > Look and feel and set the following according to the application:
 | Question Text         | 18 Bold                                                             | 18 Bold                                                             |
 | Answer Text           | 18                                                                  | 18                                                                  |
 | Custom CSS            | (empty)                                                             | (empty)                                                             |
-| External CSS          | \`https://sharecare.github.io/qualtrics-css/classic-sharecare.css\` | \`https://sharecare.github.io/qualtrics-css/classic-carefirst.css\` |
+| External CSS          | https://sharecare.github.io/qualtrics-css/classic-sharecare.css    | https://sharecare.github.io/qualtrics-css/classic-carefirst.css |
 | Motion                |                                                                     |                                                                     |
 | Page Transition       | None                                                                | None                                                                |
 | Logo                  | None                                                                | None                                                                |
