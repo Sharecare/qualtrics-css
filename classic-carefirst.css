@@ -58,8 +58,8 @@
 .Skin #Buttons {
   display: flex;
   flex-wrap: nowrap;
-  padding:  16px;
-  background-color: #FFFFFF;
+  padding: 16px;
+  background-color: #ffffff;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -72,20 +72,20 @@
 }
 .Skin #Buttons #NextButton,
 .Skin #Buttons #PreviousButton {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   width: 100%;
   max-width: 343px;
-  background-color: #2779A9;
+  background-color: #2779a9;
   height: 56px;
   padding: 0 16px 0 16px;
   border-radius: 8px;
 }
 .Skin #Buttons #NextButton:focus,
 .Skin #Buttons #PreviousButton:focus {
-  background-color: #2779A9;
+  background-color: #2779a9;
   box-shadow: none;
   outline: none;
 }
@@ -95,8 +95,8 @@
 }
 .Skin #Buttons #NextButton:active,
 .Skin #Buttons #PreviousButton:active {
-  background-color: #2779A9;
-  color:#FFFFFF;
+  background-color: #2779a9;
+  color: #ffffff;
 }
 .Skin #Buttons #NextButton:disabled,
 .Skin #Buttons #PreviousButton:disabled {
@@ -107,14 +107,15 @@
 .Skin #Buttons .Button + #NextButton {
   margin-left: 16px;
 }
-  /* End of survey */
+/* End of survey */
 
 .Skin #EndOfSurvey {
   color: #14181a;
   text-align: center;
   background: url(https://res.cloudinary.com/sharecare/image/upload/e_replace_color:0099CC:20:00bfa5/v1662554731/sharecare-images/qualtrics/heart-on-stars.png)
     center top/269px 144px no-repeat;
-  padding: 156px 16px 16px 16px;
+  padding: 164px 16px 16px 16px;
+  margin-top: 64px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -126,7 +127,7 @@
 .Skin label.MultipleAnswer.q-focused.q-checked,
 .Skin label.SingleAnswer.q-focused.q-checked {
   outline: none;
-  background: #2779A9;
+  background: #2779a9;
   box-shadow: none;
 }
 .Skin
@@ -153,9 +154,9 @@
   margin: 4px;
 }
 .Skin .NPS table label.SingleAnswer.q-checked {
-  background: #2779A9;
+  background: #2779a9;
   border-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* To add keyboard focus (with focus-visible) we need crazy selector because input isn't close to label */
 /* Support is new, not tested */
@@ -163,7 +164,7 @@
   .NPS
   table:has(input:focus-visible)
   label.SingleAnswer.q-checked.q-focused {
-  border-color: #FFFFFF;
+  border-color: #ffffff;
 }
 /* Row containing NPS options  */
 .Skin .NPS table tr:nth-child(2) {
