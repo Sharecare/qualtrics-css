@@ -58,7 +58,7 @@
 .Skin #Buttons {
   display: flex;
   flex-wrap: nowrap;
-  padding:  16px;
+  padding: 16px;
   background-color: #fff;
   position: fixed;
   bottom: 0;
@@ -114,7 +114,8 @@
   text-align: center;
   background: url(https://res.cloudinary.com/sharecare/image/upload/v1662554731/sharecare-images/qualtrics/heart-on-stars.png)
     center top/269px 144px no-repeat;
-  padding: 156px 16px 16px 16px;
+  padding: 164px 16px 16px 16px;
+  margin-top: 64px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
